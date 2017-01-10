@@ -1,7 +1,7 @@
 # affichage du montant de la cagnote
 # entre 100 et 500.000 Euros
 # le vendredi 13, la cagnote est de 2 millions
-is_vendredi_13 = true
+is_vendredi_13 = false
 if is_vendredi_13
   cagnote = 2_000_000
 else
