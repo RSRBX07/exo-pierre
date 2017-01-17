@@ -41,34 +41,33 @@ class Loto
     Date.today.day == 13 && Date.today.friday?
   end
 
-  
-
-  def prize
-    cagnote = if vendredi_13?
-        2_000_000
-      else
-        100_000
-      end
-    puts "Le montant de la cagnote du jour est de #{cagnote}"
-    cagnote
+  def check_grid grid
+    # afficher si gagne ou perdu
+    if grid.sort == draw.sort
+      puts "You win #{prize}!"
+    else
+      puts "You loose !"
+    end
   end
 
   def draw
     available_balls = (1..45).to_a
     # shuffle balls and take 5
     # @picked_balls ||= available_balls.shuffle.take(5)
-    @picked_balls = @picked_balls || available_balls.shuffle.take 5
+    @picked_balls = @picked_balls || available_balls.shuffle.take(5)
 
     puts "Le tirage du jour est : #{@picked_balls.sort}" 
     @picked_balls
   end
 
-  def check_grid grid
-    # afficher si gagne ou perdu
-    if grid.sort == draw.sort
-      puts "You win !"
+
+  private
+
+  def prize
+    if vendredi_13?
+      2_000_000
     else
-      puts "You loose !"
+      100_000
     end
   end
   
