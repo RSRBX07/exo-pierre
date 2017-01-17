@@ -27,7 +27,7 @@ class Loto
   # enregistre une grille
   # pour le loto courant
   def validate_grid grid
-    # verifier que le tirage n'a pas encore eu lieu
+    #verifier que le tirage n'a pas encore eu lieu
 
     @saved_grids ||= []
     @saved_grids.push grid
