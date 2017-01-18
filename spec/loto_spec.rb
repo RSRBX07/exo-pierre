@@ -33,6 +33,14 @@ RSpec.describe Loto do
      validated_grids = loto.validate_grid grid
      expect(validated_grids).to include grid
   end
+
+  it 'tells if draw is done' do
+    loto = Loto.new
+    expect(loto.draw_done?).to be false
+    loto.draw
+    expect(loto.draw_done?).to be true
+  end
+
   it 'reject grid validation after draw' do
     loto = Loto.new
     loto.draw 

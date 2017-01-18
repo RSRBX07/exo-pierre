@@ -28,10 +28,12 @@ class Loto
   # pour le loto courant
   def validate_grid grid
     #verifier que le tirage n'a pas encore eu lieu
-
+    
     @saved_grids ||= []
+    # TODO check draw isnot yet done
+    return  @saved_grids if draw_done?
     @saved_grids.push grid
-  end 
+  end
   # demander une grille de jeu
 
   # affichage du montant de la cagnote
@@ -60,6 +62,9 @@ class Loto
     @picked_balls
   end
 
+  def draw_done?
+    !@picked_balls.to_a.empty?
+  end
 
   private
 
