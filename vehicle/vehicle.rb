@@ -1,19 +1,7 @@
 # require 'file'
 
-class Counter
-  def add_one
-    new_val = value + 1 
-    File.open "./tmp/counter.txt", "w" do |counter_file|
-      counter_file.write new_val
-    end
-  end
+require_relative 'counter'
 
-  def value
-    File.open "./tmp/counter.txt", "r" do |counter_file|
-      counter_file.each_line {|line| return line.to_i }
-    end
-  end
-end
 class Vehicle
   attr_reader :position
   attr_reader :out_of_order
@@ -33,7 +21,5 @@ class Vehicle
   def move(destination)
     @position = destination
   end
-
   
-
 end
