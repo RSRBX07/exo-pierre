@@ -79,9 +79,17 @@ initiation à RSpec : installation, initialisation du repo, paramétrage, descri
   + `Object#class`
 - decouverte de la methode de toutes les instances de la classe `Class` : `Class#ancestors`
 
-## S2.4 18/01/2017
+## S2.4 19/01/2017
 
-
-- une nouvelle maniere de gerer les getters et setters
-- découverte et oublie des variables de classe, explication de pourquoi il ne faut pas les utiliser et de comment on peut faire autrement ET OUBLIE DE CETTE NOTION
+- revision du fonctionnement de `super` et de `scope en cascade`
+- découverte et oublie des variables de classe, explication de pourquoi il ne faut pas les utiliser (le partage et la persistance doivent etre confie a des outils dedies genre bdd) et de comment on peut faire autrement ET OUBLIE DE CETTE NOTION
 - ecriture et lecture de fichiers
+  - `File.open "<chemin_du_fichier>", "w" {|file| file.each_line {|line| puts line} }`
+  - `__FILE__` chaine de caracteres representant le chemin du fichier où figure ce mot clef
+  - `Dir.exist?` et `File.exist?`
+- decouverte de Yaml, Object#to_yaml et YAML::load
+
+## S2.5 20/01/2017
+
+- 
+
