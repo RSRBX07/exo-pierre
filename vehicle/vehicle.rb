@@ -1,6 +1,4 @@
-# require 'file'
-
-require_relative 'counter'
+ require_relative 'counter'
 
 class Vehicle
   attr_reader :position

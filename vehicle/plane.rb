@@ -1,4 +1,4 @@
-require_relative './vehicle'
+require_relative 'vehicle'
 
 class Plane < Vehicle
   attr_reader :flying
