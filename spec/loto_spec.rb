@@ -1,4 +1,4 @@
-require_relative '../loto/loto.rb'
+require_relative '../lib/loto/loto.rb'
 
 RSpec.describe Loto do
   xit 'gets grids' do
