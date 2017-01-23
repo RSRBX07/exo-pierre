@@ -45,6 +45,7 @@
 
 ## S2.1 : 16/01/2017
 
+
 - la création de classes avec class
 - les variables d’instances avec @identifier
 - le chargement de contenu de fichier require
@@ -101,5 +102,9 @@ initiation à RSpec : installation, initialisation du repo, paramétrage, descri
 
 - Mise a jour des environnements pour disposer de Rails et ses commandes
 - Presentation de Rails (Omakase et Convention Over Configuration)
-
+- Presentation du concept MVC
+- Creation d'une application Rails avec `rails new`
+- Creation d'un controller, ses routes, ses actions et vues vues associees avec `rails g controller`
+- Ajout d'un contenu dynamique dans notre vue : affichage de l'heure de chargement de la page.
+- Creations de liens entre les pages harcodees puis avec le helper `link_to`
 
