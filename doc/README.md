@@ -49,6 +49,7 @@
 - les variables d’instances avec @identifier
 - le chargement de contenu de fichier require
 - la définition de méthodes de classe avec self
+
 - les objets falsy : nil et false
 - les opérateurs “de booléens” || (OR), && (AND)
 - Array#empty? Fixnum#zero? String#empty?
@@ -91,5 +92,13 @@ initiation à RSpec : installation, initialisation du repo, paramétrage, descri
 
 ## S2.5 20/01/2017
 
-- 
+- dicovering Rails
+- failling install Rails
+- revison de l'heritage
+- decouverte des constantes
+
+## S3.1 23/01/2017
+
+- Hello Rails
+
 
