@@ -97,8 +97,9 @@ initiation à RSpec : installation, initialisation du repo, paramétrage, descri
 - revison de l'heritage
 - decouverte des constantes
 
-## S3.1 23/01/2017
+## S3.1 23/01/2017 : Hello Rails
 
-- Hello Rails
+- Mise a jour des environnements pour disposer de Rails et ses commandes
+- Presentation de Rails (Omakase et Convention Over Configuration)
 
 
