@@ -15,4 +15,13 @@ RSpec.describe Game, type: :model, focus: true do
       # expect(subject.errors[:players]).no_to be_empty
     end
   end
+  describe '#add_player' do
+    it 'increment players by one'
+    it 'do not persist new data'
+  end
+  describe '#remove_player' do
+    it 'decrement players by one'
+    it 'raise if called on a no player game'
+    it 'do not persist new data'
+  end
 end
