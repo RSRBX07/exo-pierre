@@ -4,7 +4,8 @@ RSpec.describe "games/new", type: :view do
   before(:each) do
     assign(:game, Game.new(
       :name => "MyString",
-      :description => "MyString"
+      :description => "MyString",
+      :players => 42
     ))
   end
 
@@ -16,6 +17,8 @@ RSpec.describe "games/new", type: :view do
       assert_select "input#game_name[name=?]", "game[name]"
 
       assert_select "input#game_description[name=?]", "game[description]"
+
+      assert_select "input#game_players[name=?]", "game[players]"
     end
   end
 end
