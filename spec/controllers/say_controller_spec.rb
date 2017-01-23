@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe SayController, type: :controller do
+RSpec.describe SayController, type: :controller, skip: true do
 
   describe "GET #hello" do
     it "returns http success" do
