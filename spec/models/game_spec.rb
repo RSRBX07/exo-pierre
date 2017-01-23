@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe Game, type: :model, focus: true do
+RSpec.describe Game, type: :model do
   describe '#players' do
     it 'has players with attr_accessors' do
       expect(subject).to respond_to :players, :players=
