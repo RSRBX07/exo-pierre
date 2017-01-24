@@ -43,6 +43,7 @@
 - git branch et git checkout -b
 
 
+
 ## S2.1 : 16/01/2017
 
 
@@ -110,4 +111,4 @@ initiation à RSpec : installation, initialisation du repo, paramétrage, descri
 - Ajout d'un contenu dynamique dans notre vue : affichage de l'heure de chargement de la page.
 - Creations de liens entre les pages harcodés puis avec le helper `link_to`
 - aperçu de `render`
-
+- usage de `rails g scaffold`
