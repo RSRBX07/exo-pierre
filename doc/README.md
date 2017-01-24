@@ -46,6 +46,7 @@
 ## S2.1 : 16/01/2017
 
 
+
 - la création de classes avec class
 - les variables d’instances avec @identifier
 - le chargement de contenu de fichier require
@@ -105,6 +106,8 @@ initiation à RSpec : installation, initialisation du repo, paramétrage, descri
 - Presentation du concept MVC
 - Creation d'une application Rails avec `rails new`
 - Creation d'un controller, ses routes, ses actions et vues vues associees avec `rails g controller`
+  - dans un fichier template `.erb` (embeded ruby), usage des balises `<%= ruby_expression %>`
 - Ajout d'un contenu dynamique dans notre vue : affichage de l'heure de chargement de la page.
-- Creations de liens entre les pages harcodees puis avec le helper `link_to`
+- Creations de liens entre les pages harcodés puis avec le helper `link_to`
+- aperçu de `render`
 
