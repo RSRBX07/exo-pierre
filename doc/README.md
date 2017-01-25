@@ -112,3 +112,10 @@ initiation à RSpec : installation, initialisation du repo, paramétrage, descri
 - Creations de liens entre les pages harcodés puis avec le helper `link_to`
 - aperçu de `render`
 - usage de `rails g scaffold`
+
+## S3.2 24/01/2018
+
+- installation de 'RSpec Rails' mise a jour de spec de nos specs
+- decouverte du `seeds.rb` utilise avec `rails db:seed`
+- reprise le scaffold Game pour faire afficher des resultats de loto
+- mise en place de twitter bootsrap
