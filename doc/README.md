@@ -119,3 +119,12 @@ initiation à RSpec : installation, initialisation du repo, paramétrage, descri
 - decouverte du `seeds.rb` utilise avec `rails db:seed`
 - reprise le scaffold Game pour faire afficher des resultats de loto
 - mise en place de twitter bootsrap
+
+## S3.3 25/01/2018
+
+- decouverte des validations des models rails avec la methode des classes controller `validates`
+- la difference entre les instances de models `changed?` et `persisted?`, ainsi que l'usage differencie de `save` et `save!`
+- decouverte des associations entre modeles avec `belongs_to` et `has_many`
+- decouverte de la recuperation d'instances de models en bdd avec `find`, `last`, `first`, `all`
+- des methodes pour creer nos migration : `add_column`, `create_table`
+- revison du seeding et decouverte de la conservation du dernier index meme apres `destroy_all`
