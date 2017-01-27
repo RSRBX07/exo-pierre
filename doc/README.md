@@ -27,6 +27,7 @@
 - git : clone, pull, reset
 - String#split
 - Time class
+
 ## S1.4 : 12/01/2017
 
 - la comparaison avec !=
@@ -37,6 +38,7 @@
 - 42, la réponse à la grande question
 
 ## S1.5 : 13/01/2017 (Little cooperation )
+
 - usage collaboratif d’un repo GitHub
 - git branch et git checkout -b
 
@@ -47,7 +49,7 @@
 - la création de classes avec class
 - les variables d’instances avec @identifier
 - le chargement de contenu de fichier require
-i- la définition de méthodes de classe avec self
+- la définition de méthodes de classe avec self
 - les objets falsy : nil et false
 - les opérateurs “de booléens” || (OR), && (AND)
 - Array#empty? Fixnum#zero? String#empty?
@@ -57,21 +59,21 @@ i- la définition de méthodes de classe avec self
 
 
 - les méthodes privées avec private
-u- les accessors avec attr_reader et attr_writer + symbole avec l’identifier de la variable d’instance
+- les accessors avec attr_reader et attr_writer + symbole avec l’identifier de la variable d’instance
 - l’initialize
 - initiation à RSpec : installation, initialisation du repo, paramétrage, description de notre classe avec RSpec:describe et de ses méthodes avec it qui prend en argument une chaîne de caractères descriptive de la fonctionnalité attendue + qui exécute le test à proprement parler. Dans ce bloc utilise - la methode expect qui prend comme argument l’objet testé, suivi de la méthode to ou not_to a laquelle on passe un matcher.
 - expect(objet_teste).to(be_an Array)
-y
+
 ## S2.3 18/01/2017
 
 
 - révision des méthodes initialize et new
 - super
-q- l'héritage des classes
+- l'héritage des classes
 - la notion de scope
 - la notion de cascading scope et le processus de recherche des définitions des méthodes lors de leur appel
 - Découverte de CircleCI
-b- Git : reutilisation de git checkout -b + nom_de_la_nouvelle_branche_qui_sera_cree_ET _sur_laquelle_on_se_checkout
+- Git : reutilisation de git checkout -b + nom_de_la_nouvelle_branche_qui_sera_cree_ET _sur_laquelle_on_se_checkout
 - révision des bases de RSpec
 - revision du mot clef _private_
 - revision des d'instances methodes communes a tous les objets :
@@ -87,7 +89,7 @@ u
 - ecriture et lecture de fichiers
   - `File.open "<chemin_du_fichier>", "w" {|file| file.each_line {|line| puts line} }`
   - `__FILE__` chaine de caracteres representant le chemin du fichier où figure ce mot clef
-r  - `Dir.exist?` et `File.exist?`
+  - `Dir.exist?` et `File.exist?`
 - decouverte de Yaml, Object#to_yaml et YAML::load
 
 ## S2.5 20/01/2017
@@ -101,7 +103,7 @@ r
 
 - Mise a jour des environnements pour disposer de Rails et ses commandes
 - Presentation de Rails (Omakase et Convention Over Configuration)
-- Presentation du concept MVC
+- Presentation du concept MVC ![Shema de MVC](https://betterexplained.com/wp-content/uploads/rails/mvc-rails.png)
 - Creation d'une application Rails avec `rails new`
 - Creation d'un controller, ses routes, ses actions et vues vues associees avec `rails g controller`
   - dans un fichier template `.erb` (embeded ruby), usage des balises `<%= ruby_expression %>`
