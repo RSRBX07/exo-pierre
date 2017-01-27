@@ -27,7 +27,6 @@
 - git : clone, pull, reset
 - String#split
 - Time class
-
 ## S1.4 : 12/01/2017
 
 - la comparaison avec !=
@@ -38,23 +37,17 @@
 - 42, la réponse à la grande question
 
 ## S1.5 : 13/01/2017 (Little cooperation )
-
 - usage collaboratif d’un repo GitHub
 - git branch et git checkout -b
-
-
 
 
 ## S2.1 : 16/01/2017
 
 
-
 - la création de classes avec class
 - les variables d’instances avec @identifier
-
 - le chargement de contenu de fichier require
-- la définition de méthodes de classe avec self
-
+i- la définition de méthodes de classe avec self
 - les objets falsy : nil et false
 - les opérateurs “de booléens” || (OR), && (AND)
 - Array#empty? Fixnum#zero? String#empty?
@@ -62,41 +55,43 @@
 
 ## S2.2 : 17/01/2017
 
-- les méthodes privées avec private
-- les accessors avec attr_reader et attr_writer + symbole avec l’identifier de la variable d’instance
-- l’initialize
-initiation à RSpec : installation, initialisation du repo, paramétrage, description de notre classe avec RSpec:describe et de ses méthodes avec it qui prend en argument une chaîne de caractères descriptive de la fonctionnalité attendue + qui exécute le test à proprement parler. Dans ce bloc utilise - la methode expect qui prend comme argument l’objet testé, suivi de la méthode to ou not_to a laquelle on passe un matcher.
-- expect(objet_teste).to(be_an Array)
 
+- les méthodes privées avec private
+u- les accessors avec attr_reader et attr_writer + symbole avec l’identifier de la variable d’instance
+- l’initialize
+- initiation à RSpec : installation, initialisation du repo, paramétrage, description de notre classe avec RSpec:describe et de ses méthodes avec it qui prend en argument une chaîne de caractères descriptive de la fonctionnalité attendue + qui exécute le test à proprement parler. Dans ce bloc utilise - la methode expect qui prend comme argument l’objet testé, suivi de la méthode to ou not_to a laquelle on passe un matcher.
+- expect(objet_teste).to(be_an Array)
+y
 ## S2.3 18/01/2017
+
 
 - révision des méthodes initialize et new
 - super
-- l'héritage des classes
+q- l'héritage des classes
 - la notion de scope
 - la notion de cascading scope et le processus de recherche des définitions des méthodes lors de leur appel
 - Découverte de CircleCI
-- Git : reutilisation de git checkout -b + nom_de_la_nouvelle_branche_qui_sera_cree_ET _sur_laquelle_on_se_checkout
+b- Git : reutilisation de git checkout -b + nom_de_la_nouvelle_branche_qui_sera_cree_ET _sur_laquelle_on_se_checkout
 - révision des bases de RSpec
 - revision du mot clef _private_
 - revision des d'instances methodes communes a tous les objets :
   + `Object#methods`
   + `Object#inspect`
-  + `Object#class`
+e  + `Object#class`
 - decouverte de la methode de toutes les instances de la classe `Class` : `Class#ancestors`
 
 ## S2.4 19/01/2017
-
+u
 - revision du fonctionnement de `super` et de `scope en cascade`
 - découverte et oublie des variables de classe, explication de pourquoi il ne faut pas les utiliser (le partage et la persistance doivent etre confie a des outils dedies genre bdd) et de comment on peut faire autrement ET OUBLIE DE CETTE NOTION
 - ecriture et lecture de fichiers
   - `File.open "<chemin_du_fichier>", "w" {|file| file.each_line {|line| puts line} }`
   - `__FILE__` chaine de caracteres representant le chemin du fichier où figure ce mot clef
-  - `Dir.exist?` et `File.exist?`
+r  - `Dir.exist?` et `File.exist?`
 - decouverte de Yaml, Object#to_yaml et YAML::load
 
 ## S2.5 20/01/2017
-
+r
 - dicovering Rails
 - failling install Rails
 - revison de l'heritage
@@ -126,7 +121,7 @@ initiation à RSpec : installation, initialisation du repo, paramétrage, descri
 
 - decouverte des validations des models rails avec la methode des classes controller `validates`
 - la difference entre les instances de models `changed?` et `persisted?`, ainsi que l'usage differencie de `save` et `save!`
-- decouverte des associations entre modeles avec `belongs_to` et `has_many`
+- decouverte des associations entre modeles avec `belongs_to` et `has_many` avec l'option `
 - decouverte de la recuperation d'instances de models en bdd avec `find`, `last`, `first`, `all`
 - des methodes pour creer nos migration : `add_column`, `create_table`
 - revison du seeding et decouverte de la conservation du dernier index meme apres `destroy_all`
@@ -138,3 +133,15 @@ initiation à RSpec : installation, initialisation du repo, paramétrage, descri
 - on a presente rapidement coffeescript et choisi de le desactiver puor notre application.
 - on a decouvert la notion de _cache_ avec divers exemples : le cache des navigateurs, des resolutions DNS, le cache des proxy... et des caches specifiques a nos environnements de developpement et de production, qui peuvent generer des erreurs par manque de dépreciation de cache.
 - decouverte du repertoire `/app/assets/`
+- les generateurs de controlleurs et de migrations
+- catching d'erreurs en Ruby avec la syntaxe :
+
+```
+
+## S3.5 27/01/2017
+
+- validations des modeles avec `validates`
+- Les creations en chaine d'objets qui `belongs_to` d'autres.
+- les generateurs de modeles, revision des migrations
+= nouvelles associations : `has_one`, `belongs_to :x, through: :y`
+- les ActiveRecord hooks `before_create` et toute la clique.
