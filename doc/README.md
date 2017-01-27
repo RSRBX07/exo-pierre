@@ -129,6 +129,7 @@ r
 ## S3.4 26/01/2017
 
 - decouverte du router, et comment un objet `params` est cree par le router puis transmis au controller. dans le controller on a pu ainsi faire `params[:id]`. Pour cela, il faut disposer dans les routes d'une route avec `courses/show/:id/`
+- la methode des controllers `redirect_to`
 - decouverte de la notion de racine du site : indiquee dans le fichier `routes.rb` avec `root`.
 - on a presente rapidement coffeescript et choisi de le desactiver puor notre application.
 - on a decouvert la notion de _cache_ avec divers exemples : le cache des navigateurs, des resolutions DNS, le cache des proxy... et des caches specifiques a nos environnements de developpement et de production, qui peuvent generer des erreurs par manque de dépreciation de cache.
@@ -136,6 +137,13 @@ r
 - les generateurs de controlleurs et de migrations
 - catching d'erreurs en Ruby avec la syntaxe :
 
+```ruby
+begin
+  # en admettant qu'il n'existe pas de cours dont l'id soit 42
+  Course.find 42
+rescue
+  redirect_to '/courses/index/', notice: "Le cours 42 n'existe pas"
+end
 ```
 
 ## S3.5 27/01/2017
@@ -143,5 +151,5 @@ r
 - validations des modeles avec `validates`
 - Les creations en chaine d'objets qui `belongs_to` d'autres.
 - les generateurs de modeles, revision des migrations
-= nouvelles associations : `has_one`, `belongs_to :x, through: :y`
+- nouvelles associations : `has_one`, `belongs_to :x, through: :y`
 - les ActiveRecord hooks `before_create` et toute la clique.
