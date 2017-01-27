@@ -44,12 +44,14 @@
 
 
 
+
 ## S2.1 : 16/01/2017
 
 
 
 - la création de classes avec class
 - les variables d’instances avec @identifier
+
 - le chargement de contenu de fichier require
 - la définition de méthodes de classe avec self
 
@@ -113,14 +115,14 @@ initiation à RSpec : installation, initialisation du repo, paramétrage, descri
 - aperçu de `render`
 - usage de `rails g scaffold`
 
-## S3.2 24/01/2018
+## S3.2 24/01/2017
 
 - installation de 'RSpec Rails' mise a jour de spec de nos specs
 - decouverte du `seeds.rb` utilise avec `rails db:seed`
 - reprise le scaffold Game pour faire afficher des resultats de loto
 - mise en place de twitter bootsrap
 
-## S3.3 25/01/2018
+## S3.3 25/01/2017
 
 - decouverte des validations des models rails avec la methode des classes controller `validates`
 - la difference entre les instances de models `changed?` et `persisted?`, ainsi que l'usage differencie de `save` et `save!`
@@ -128,3 +130,11 @@ initiation à RSpec : installation, initialisation du repo, paramétrage, descri
 - decouverte de la recuperation d'instances de models en bdd avec `find`, `last`, `first`, `all`
 - des methodes pour creer nos migration : `add_column`, `create_table`
 - revison du seeding et decouverte de la conservation du dernier index meme apres `destroy_all`
+
+## S3.4 26/01/2017
+
+- decouverte du router, et comment un objet `params` est cree par le router puis transmis au controller. dans le controller on a pu ainsi faire `params[:id]`. Pour cela, il faut disposer dans les routes d'une route avec `courses/show/:id/`
+- decouverte de la notion de racine du site : indiquee dans le fichier `routes.rb` avec `root`.
+- on a presente rapidement coffeescript et choisi de le desactiver puor notre application.
+- on a decouvert la notion de _cache_ avec divers exemples : le cache des navigateurs, des resolutions DNS, le cache des proxy... et des caches specifiques a nos environnements de developpement et de production, qui peuvent generer des erreurs par manque de dépreciation de cache.
+- decouverte du repertoire `/app/assets/`
