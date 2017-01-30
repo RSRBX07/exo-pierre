@@ -79,11 +79,11 @@
 - revision des d'instances methodes communes a tous les objets :
   + `Object#methods`
   + `Object#inspect`
-e  + `Object#class`
+  + `Object#class`
 - decouverte de la methode de toutes les instances de la classe `Class` : `Class#ancestors`
 
 ## S2.4 19/01/2017
-u
+
 - revision du fonctionnement de `super` et de `scope en cascade`
 - découverte et oublie des variables de classe, explication de pourquoi il ne faut pas les utiliser (le partage et la persistance doivent etre confie a des outils dedies genre bdd) et de comment on peut faire autrement ET OUBLIE DE CETTE NOTION
 - ecriture et lecture de fichiers
@@ -93,7 +93,7 @@ u
 - decouverte de Yaml, Object#to_yaml et YAML::load
 
 ## S2.5 20/01/2017
-r
+
 - dicovering Rails
 - failling install Rails
 - revison de l'heritage
@@ -151,7 +151,7 @@ end
 ## S3.5 27/01/2017
 
 - validations des modeles avec `validates`
-- Les creations en chaine d'objets qui `belongs_to` d'autres.
+- Les créations en chaîne d'objets qui `belongs_to` d'autres.
 - les generateurs de modeles, revision des migrations
 - nouvelles associations : `has_one`, `belongs_to :x, through: :y`
 - les ActiveRecord hooks `before_create` et toute la clique.
