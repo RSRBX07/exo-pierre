@@ -140,11 +140,17 @@
 - catching d'erreurs en Ruby avec la syntaxe :
 
 ```ruby
-begin
-  # en admettant qu'il n'existe pas de cours dont l'id soit 42
-  Course.find 42
-rescue
-  redirect_to '/courses/index/', notice: "Le cours 42 n'existe pas"
+class CoursesController < ApplicationController
+
+  def show_42
+    begin
+      # en admettant qu'il n'existe pas de cours dont l'id soit 42
+      Course.find 42
+    rescue
+      redirect_to '/courses/index/', notice: "Le cours 42 n'existe pas"
+    end
+  end
+  
 end
 ```
 
@@ -155,3 +161,26 @@ end
 - les generateurs de modeles, revision des migrations
 - nouvelles associations : `has_one`, `belongs_to :x, through: :y`
 - les ActiveRecord hooks `before_create` et toute la clique.
+
+## S3.1
+
+- `button_to`
+- _partials_
+- `delegate`
+- `where` ?
+
+## S3.2
+
+
+- partials et les collections
+- suppression d'objets lies
+- 
+
+## S3.3
+
+- _mailers_ ?
+- _action cable_ ?
+
+## S3.4
+
+## S3.5
