@@ -64,7 +64,14 @@ class GamesController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_game
-      @game = Game.find(params[:id])
+      begin
+        @game = Game.find(params[:id])
+      rescue
+        redirect_to games_path, {
+          :alert => "Le jeu #{params[:id]} n'existe pas.",
+          :warning => "vous avez ete redirige vers l'accueil des jeux"
+        }
+      end
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

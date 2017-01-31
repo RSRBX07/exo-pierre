@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
   resources :games
+
+  post 'players', to: 'players#create'
+
+  get 'players/index', to: 'players#index'
+
   get 'say/hello'
 
   get 'say/goodbye'

@@ -9,6 +9,19 @@
   </head>
 
   <body>
+    <% if !notice.nil? %>
+      <p class="notice"><%= notice %></p>
+    <% end %>
+    <% if !alert.nil? %>
+      <p class="alert"><%= alert %></p>
+    <% end %>
+    <%= render "micro_profile" %>
+    <% flash.each do |flash_type, msg| %>
+      <div class="<%= flash_type %>"><%= msg %></div>
+    <% end %>
+
+
+
     <%= yield %>
   </body>
 </html>

@@ -150,7 +150,7 @@ class CoursesController < ApplicationController
       redirect_to '/courses/index/', notice: "Le cours 42 n'existe pas"
     end
   end
-  
+
 end
 ```
 
@@ -164,11 +164,39 @@ end
 
 ## S3.1
 
-- `button_to`
-- _partials_
+- verbes http : get, post, delete, patch, put, head ...
+- le helper `button_to`
+   - Il s'utilise dans les vues pour generer des requetes en POST.
+   - Il se construit comme le `link_to` :
+      ```ruby
+      <%= button_to "texte du bouton", players_path %>
+      ```
+- decouverte des _partials_
+  - servent à simplifier les vues, et a factoriser des elements de vue sur differents templates
+  - sont des sortes de templates
+  - le nom du fichier commence par "_" et se termine par l'extention ".html.erb"
+  - un partial representant l'affichage d'un modele _Game_ doit etre par convention `app/views/games/_game.html.erb`
+  - s'utilise
+    - dans les fichiers de vue
+    - avec la methode `render`
 - `delegate`
-- `where` ?
-
+  ```ruby
+    class Fruit < ApplicationRecord
+      belongs_to :orchard
+      # pour appeler le jeu d'un Fruit
+      # ne fonctionne pas
+      # belongs_to :game, through: :orchard
+      def game
+        orchard.game
+      end
+      # ou en une ligne
+      delegate :game, to: :orchard
+    end
+  ```
+- `where` est une methode d'ActiveRecord
+  - qui renvoi des Fruit::ActiveRecord_Relation (si employee dans le modele de Fruit)
+  - qui est chainable
+  - dont la requete SQL correspondante ne sera executee que lors de l'appel final de l'objet
 ## S3.2
 
 
