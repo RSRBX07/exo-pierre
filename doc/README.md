@@ -199,7 +199,7 @@ end
   - dont la requete SQL correspondante ne sera executee que lors de l'appel final de l'objet
 ## S3.2
 
-
+- revisions de 
 - partials et les collections
 - suppression d'objets lies
 - 
@@ -211,4 +211,6 @@ end
 
 ## S3.4
 
-## S3.5
+## S3.5 Lets code in real life
+
+- bugs de covoiturage libre
